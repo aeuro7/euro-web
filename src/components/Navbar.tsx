@@ -19,8 +19,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full sticky top-3 z-50">
-      <div className="flex container mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
+    <nav className="w-min-screen sticky top-3 z-50">
+      <div className="flex container mx-auto sm:mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
         
         {/* Left side: Logo */}
         <button onClick={handleMainClick} className="text-white hover:text-bluemain">LOGO</button>
@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="mt-4 mr-10 ml-10 py-4 md:hidden flex flex-col items-center space-y-4 bg-black bg-opacity-10 justify-between backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
+        <div className="mt-4 mr-10 ml-10 py-4 md:hidden flex flex-col items-center space-y-4 bg-black bg-opacity-10 justify-between backdrop-blur-lg rounded-[50px] border border-white border-opacity-20 animate-fadeDown">
           <button className="text-white hover:text-bluemain">Github</button>
           <button className="text-white hover:text-bluemain">Linkedin</button>
           <button className="text-white hover:text-bluemain">Contact</button>
