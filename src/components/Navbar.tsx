@@ -1,55 +1,59 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // Import useRouter from Next.js
+import { useRouter } from "next/navigation"; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter(); // Initialize useRouter hook
+  const router = useRouter();
 
   const handleGitHubClick = () => {
-    window.open("http://github.com/aeuro7", "_blank"); // เปิด GitHub ในแท็บใหม่
+    window.open("http://github.com/aeuro7", "_blank");
   };
 
   const handleLinkedinClick = () => {
-    window.open("https://www.linkedin.com/in/tibet-charoensripaiboon-895162328/", "_blank"); // เปิด LinkedIn ในแท็บใหม่
+    window.open("https://www.linkedin.com/in/tibet-charoensripaiboon-895162328/", "_blank");
   };
 
-  const handleContactClick = () => {
-    // สามารถเพิ่มลิงก์การติดต่อ หรือการเปลี่ยนหน้าอื่นได้ที่นี่
-  };
+  const handleContactClick = () => {};
 
   return (
-    <nav className="w-min-screen sticky top-3 z-50">
-      <div className="flex container mx-auto sm:mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
+    <nav className="w-full sticky top-3 z-50">
+      <div className="flex flex-col container mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
         
-        {/* Left side: Logo */}
-        <button className="text-white hover:text-bluemain">EURO</button>
+        {/* Top Bar */}
+        <div className="flex w-full justify-between items-center">
+          <button className="text-white hover:text-bluemain duration-500">EURO</button>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6 text-white font-light">
-          <button onClick={handleGitHubClick} className="hover:text-bluemain">Github</button>
-          <button onClick={handleLinkedinClick} className="hover:text-bluemain">Linkedin</button>
-          <button onClick={handleContactClick} className="hover:text-bluemain">Contact</button>
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-6 text-white font-light">
+            <button onClick={handleGitHubClick} className="hover:text-bluemain duration-500">Github</button>
+            <button onClick={handleLinkedinClick} className="hover:text-bluemain duration-500">Linkedin</button>
+            <button onClick={handleContactClick} className="hover:text-bluemain duration-500">Contact</button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            className="md:hidden text-white focus:outline-none duration-500 hover:text-bluemain hover:bg-white bg-white bg-opacity-10 rounded-full p-2 px-4"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            Menu
+          </button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-white focus:outline-none hover:text-bluemain"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          Menu
-        </button>
+        {/* Mobile Menu (อยู่ภายในกรอบเดียวกัน) */}
+        <div className={`w-full flex flex-col items-center space-y-4 transition-all duration-300 ease-in-out overflow-hidden ${
+          isOpen ? "max-h-34 py-4 opacity-100 scale-y-100" : "max-h-0 py-0 opacity-0 scale-y-0"
+        } md:hidden`}>
+          <hr className="w-full border-t border-white border-opacity-20 transition-all duration-500 ease-in-out transform ${
+            isOpen ? 'opacity-100 scale-x-100' : 'opacity-0 scale-x-0'
+          }" />
+          <button onClick={handleGitHubClick} className="text-white hover:text-bluemain duration-500">Github</button>
+          <button onClick={handleLinkedinClick} className="text-white hover:text-bluemain duration-500">Linkedin</button>
+          <button onClick={handleContactClick} className="text-white hover:text-bluemain duration-500">Contact</button>
+        </div>
+
       </div>
-
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="mt-4 mr-10 ml-10 py-4 md:hidden flex flex-col items-center space-y-4 bg-black bg-opacity-10 justify-between backdrop-blur-lg rounded-[50px] border border-white border-opacity-20 animate-fadeDown">
-          <button onClick={handleGitHubClick} className="text-white hover:text-bluemain">Github</button>
-          <button onClick={handleLinkedinClick} className="text-white hover:text-bluemain">Linkedin</button>
-          <button onClick={handleContactClick} className="text-white hover:text-bluemain">Contact</button>
-        </div>
-      )}
     </nav>
   );
 }

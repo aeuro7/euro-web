@@ -41,8 +41,24 @@
 }
 
 .animate-fadeDown {
-  animation: fadeDown 0.9s ease-out forwards;
+  animation: fadeDown 0.5s ease-out forwards;
 }
+
+/* styles/globals.css */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}
+
 
 
 body {
