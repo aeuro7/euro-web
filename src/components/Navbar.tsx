@@ -1,7 +1,5 @@
 "use client";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { useState } from "react";
 import { useRouter } from "next/navigation"; // Import useRouter from Next.js
 
@@ -10,12 +8,15 @@ export default function Navbar() {
   const router = useRouter(); // Initialize useRouter hook
 
   const handleGitHubClick = () => {
-    // Trigger the page change and add fade effect
-    router.push("/user");
+    window.open("http://github.com/aeuro7", "_blank"); // เปิด GitHub ในแท็บใหม่
   };
-  const handleMainClick = () => {
-    // Trigger the page change and add fade effect
-    router.push("/");
+
+  const handleLinkedinClick = () => {
+    window.open("https://www.linkedin.com/in/tibet-charoensripaiboon-895162328/", "_blank"); // เปิด LinkedIn ในแท็บใหม่
+  };
+
+  const handleContactClick = () => {
+    // สามารถเพิ่มลิงก์การติดต่อ หรือการเปลี่ยนหน้าอื่นได้ที่นี่
   };
 
   return (
@@ -23,14 +24,13 @@ export default function Navbar() {
       <div className="flex container mx-auto sm:mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
         
         {/* Left side: Logo */}
-        <button onClick={handleMainClick} className="text-white hover:text-bluemain">EURO</button>
-
+        <button className="text-white hover:text-bluemain">EURO</button>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-white font-light">
-          <button onClick={() => window.open("http://github.com/aeuro7", "_blank")} className="hover:text-bluemain">Github</button>
-          <button onClick={() => window.open("https://www.linkedin.com/in/tibet-charoensripaiboon-895162328/", "_blank")} className="hover:text-bluemain">Linkedin</button>
-          <button className="hover:text-bluemain">Contact</button>
+          <button onClick={handleGitHubClick} className="hover:text-bluemain">Github</button>
+          <button onClick={handleLinkedinClick} className="hover:text-bluemain">Linkedin</button>
+          <button onClick={handleContactClick} className="hover:text-bluemain">Contact</button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -45,9 +45,9 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="mt-4 mr-10 ml-10 py-4 md:hidden flex flex-col items-center space-y-4 bg-black bg-opacity-10 justify-between backdrop-blur-lg rounded-[50px] border border-white border-opacity-20 animate-fadeDown">
-          <button className="text-white hover:text-bluemain">Github</button>
-          <button className="text-white hover:text-bluemain">Linkedin</button>
-          <button className="text-white hover:text-bluemain">Contact</button>
+          <button onClick={handleGitHubClick} className="text-white hover:text-bluemain">Github</button>
+          <button onClick={handleLinkedinClick} className="text-white hover:text-bluemain">Linkedin</button>
+          <button onClick={handleContactClick} className="text-white hover:text-bluemain">Contact</button>
         </div>
       )}
     </nav>

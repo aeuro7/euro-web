@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full object-cover duration-1000 animate-fadeInUp overflow-x-hidden">
       <div className="absolute w-full h-10 bg-bluemain items-center justify-center flex hover:underline z-20">
-        latest version create by euro3.
+        latest version create by euro7.
       </div>
       <div className="bg-gradient-to-b from-[#1d1d38] via-[#11111d] to-[#040405] w-full min-h-[1000px]">
         <div className="h-20 z-10"></div>
