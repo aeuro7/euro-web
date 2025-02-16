@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="flex container mx-auto sm:mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
         
         {/* Left side: Logo */}
-        <button onClick={handleMainClick} className="text-white hover:text-bluemain">LOGO</button>
+        <button onClick={handleMainClick} className="text-white hover:text-bluemain">EURO</button>
 
 
         {/* Desktop Menu */}
