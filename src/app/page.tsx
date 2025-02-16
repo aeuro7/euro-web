@@ -3,9 +3,9 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full object-cover duration-1000 animate-fadeInUp">
+    <div className="min-h-screen w-full object-cover duration-1000 animate-fadeInUp overflow-x-hidden">
       <div className="absolute w-full h-10 bg-bluemain items-center justify-center flex hover:underline z-20">
-        latest version create by euro1.
+        latest version create by euro2.
       </div>
       <div className="bg-gradient-to-b from-[#040405] to-[#040405] w-full min-h-[2000px]">
         <div className="h-20 z-10"></div>
