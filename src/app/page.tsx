@@ -5,16 +5,16 @@ export default function Home() {
   return (
     <div className="min-h-screen w-full object-cover duration-1000 animate-fadeInUp overflow-x-hidden">
       <div className="absolute w-full h-10 bg-bluemain items-center justify-center flex hover:underline z-20">
-        latest version create by euro2.
+        latest version create by euro3.
       </div>
-      <div className="bg-gradient-to-b from-[#040405] to-[#040405] w-full min-h-[2000px]">
+      <div className="bg-gradient-to-b from-[#1d1d38] via-[#11111d] to-[#040405] w-full min-h-[1000px]">
         <div className="h-20 z-10"></div>
 
         <Navbar />
 
         {/* Position the red div below Navbar */}
         <div className="relative flex items-center justify-center w-full min-h-screen">
-          <div className="absolute top-[-500px] left-2/4 transform -translate-x-2/4 sm:w-[1200px] w-[1500px] sm:h-[800px] h-[1000px] bg-[#314561] blur-[220px] rounded-full z-10"></div>
+          {/* <div className="absolute top-[-500px] left-2/4 transform -translate-x-2/4 sm:w-[1200px] w-[1500px] sm:h-[800px] h-[1000px] bg-[#314561] blur-[220px] rounded-full z-10"></div> */}
 
           {/* Section with fade-in and slide-up animation */}
           <div className="absolute top-16 z-10 h-[500px] w-4/5 sm:w-2/4 md:w-3/4 lg:w-2/4 sm:h-auto sm:top-10 sm:translate-y-0 sm:opacity-100 flex flex-col items-center justify-start transition-all duration-700 opacity-0 translate-y-10 animate-fadeInUp px-10 sm:px-10">
