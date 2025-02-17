@@ -20,11 +20,9 @@ export default function Home() {
             <div className="absolute top-8 z-10 h-[500px] w-4/5 sm:w-2/5 flex flex-col items-center justify-start transition-all duration-700 opacity-0 translate-y-10 animate-fadeInUp">
               <h1 className="text-4xl text-white font-bold">Hi I'am Euro</h1>
               <p className="mt-6 text-md text-white  ">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello
-                ,&nbsp;I'm Tibet Charoensripaiboon or Euro.{" "}
-                <span className="text-[#7392c6] italic"> ( him ) </span>
-                <br />
-                I'm a third-year Computer Science student at Kasetsart
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello,&nbsp;I'm Tibet Charoensripaiboon or Euro.{" "}
+                <span className="text-[#7392c6] italic"> ( him ) </span>                
+                &nbsp;I'm a third-year Computer Science student at Kasetsart
                 University.
                 <br />
                 <br />
