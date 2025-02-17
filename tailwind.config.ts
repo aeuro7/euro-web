@@ -8,14 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: "var(--font-roboto)",
+        lora: "var(--font-lora)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         bluemain: "#306fdb",
-      
-
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 } satisfies Config;

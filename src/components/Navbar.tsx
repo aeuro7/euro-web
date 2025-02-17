@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <nav className="w-full sticky top-3 z-50">
-      <div className="flex flex-col container mx-auto px-8 py-4 bg-black bg-opacity-10 justify-between items-center backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
+      <div className="flex flex-col container mx-auto px-8 py-4 bg-black justify-between items-center bg-opacity-10  backdrop-blur-lg rounded-[50px] border border-white border-opacity-20">
         
         {/* Top Bar */}
         <div className="flex w-full justify-between items-center">

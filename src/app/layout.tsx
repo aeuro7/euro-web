@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
+import { Lora } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar";
 
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
+  variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ["400", "700"], // สามารถเพิ่มน้ำหนักที่ต้องการได้
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
+  weight: ["400", "700"], // สามารถเพิ่มน้ำหนักที่ต้องการได้
 });
 
 export const metadata: Metadata = {
@@ -26,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
+      <body className={`${lora.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>
     </html>
