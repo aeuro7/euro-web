@@ -6,8 +6,8 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <div className="w-full min-h-screen object-cover duration-1000 animate-fadeInUp sf-pro">
-      <div className="absolute w-full h-10 bg-bluemain items-center justify-center flex hover:underline z-20  border-b-[1px] border-[#6798b6]">
-        latest version create by euro.
+      <div className="font-roboto absolute w-full h-10 bg-gradient-to-br from-[#5088ea] to-[#224582] items-center justify-center flex hover:underline z-20  ">
+        welcome to my mini portfolio :)
       </div>
 
       <div>
@@ -46,11 +46,14 @@ export default function Home() {
           
         </div>
            {/* <div className="bg-[#040405] h-min-[600px] w-full font-roboto"> */}
-           <div className="bg-gradient-to-b from-[#040405] via-[#19325d] to-[#040405] h-[370px] w-full font-roboto">
-           <div className="text-4xl text-white ml-10">
+           <div className="bg-gradient-to-b from-[#040405] via-[#19325d] to-[#040405] h-[570px] w-full font-roboto">
+           <div className="text-4xl text-white ml-6">
             Experience
           </div>
           <Experience />
+          <div className="absolute w-full items-center flex justify-center h-[210px]">
+              it's not possible ... no it's necessary
+          </div>
           <Footer />
           </div>
 

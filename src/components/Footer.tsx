@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-opacity-30  backdrop-blur-lg bg-black text-white py-6 mt-8 border-t border-b border-gray-600">
+    <footer className="absolute bottom-0 w-full bg-opacity-30  backdrop-blur-lg bg-black text-white py-6 mt-8 border-t border-b border-gray-600">
       <div className='flex flex-row items-center justify-between'>
         <Link href="mailto:tibet.cpb@gmail.com">
           <button 
