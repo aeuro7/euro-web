@@ -13,14 +13,16 @@ export default function Home() {
       <div>
         <div className="bg-gradient-to-b from-[#292946] via-[#040405] to-[#040405] w-full h-[900px]">
           <div className="h-16 z-10"> </div>
+          <div className="h-[100px]">
           <Navbar />
+          </div>
           {/* Position the red div below Navbar */}
           <div className="relative flex items-center justify-center w-full min-h-screen">
             {/* Section with fade-in and slide-up animation */}
             <div className="absolute top-8 z-10 h-[500px] w-4/5 sm:w-2/5 flex flex-col items-center justify-start transition-all duration-700 opacity-0 translate-y-10 animate-fadeInUp">
               <h1 className="text-4xl text-white font-bold">Hi I'am Euro</h1>
               <p className="mt-6 text-md text-white  ">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello,&nbsp;I'm Tibet Charoensripaiboon or Euro.{" "}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nice to meet you,&nbsp;I'm Euro.{" "}
                 <span className="text-[#7392c6] italic"> ( him ) </span>                
                 &nbsp;I'm a third-year Computer Science student at Kasetsart
                 University.
@@ -46,7 +48,7 @@ export default function Home() {
           
         </div>
            {/* <div className="bg-[#040405] h-min-[600px] w-full font-roboto"> */}
-           <div className="bg-gradient-to-b from-[#040405] via-[#19325d] to-[#040405] h-[570px] w-full font-roboto">
+           <div className="bg-gradient-to-b from-[#040405] via-[#0d2143] to-[#040405] h-[570px] w-full font-roboto">
            <div className="text-4xl text-white ml-6">
             Experience
           </div>
