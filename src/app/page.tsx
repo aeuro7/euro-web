@@ -15,6 +15,7 @@ export default function Home() {
           <div className="h-16 z-10"> </div>
           <div className="h-[100px]">
           <Navbar />
+          
           </div>
           {/* Position the red div below Navbar */}
           <div className="relative flex items-center justify-center w-full min-h-screen">
@@ -32,7 +33,7 @@ export default function Home() {
                 passionate about technology and software development, focusing
                 on building high-quality, stable systems with strong quality
                 assurance.{" "}
-              </p>
+              </p>      
               <div className="mt-12">
                 <Image
                   className="rounded-[30px] shadow-lg shadow-[#1111]"
@@ -54,7 +55,7 @@ export default function Home() {
           </div>
           <Experience />
           <div className="absolute w-full items-center flex justify-center h-[210px]">
-              it's not possible ... no it's necessary
+              Coming soon .  .   . 
           </div>
           <Footer />
           </div>
