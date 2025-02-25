@@ -3,9 +3,11 @@ import Navbar from "../components/Navbar";
 import { FaBookBookmark, FaCodeBranch, FaAws, FaSalesforce } from "react-icons/fa6";
 
 export default function Experience() {
+
   return (
     <div className="overflow-x-auto flex space-x-4 justify-between p-4 text-black scrollbar-hide">
-      <div className="ml-3 min-w-[300px] h-[160px] bg-white p-4 rounded-[40px] shadow-lg  hover:scale-105 transition-all duration-300 ">
+      <div className="ml-3 min-w-[300px] h-[160px] bg-white p-4 rounded-[40px] shadow-lg  hover:scale-105 transition-all duration-300 "
+           >
         <div className="ml-3 mt-2">
           <div className="h-6 w-24 font-roboto text-sm mb-3 flex items-center justify-center text-white focus:outline-none duration-500 hover:bg-white bg-gradient-to-r from-[#5088ea] to-[#224582] bg-opacity-100 rounded-full">
             2022 - 2026

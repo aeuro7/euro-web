@@ -34,7 +34,9 @@ export default function Navbar() {
     );
   };
 
-  const handleContactClick = () => {};
+  const handleContactClick = () => {
+    window.open("mailto:tibet.cpb@gmail.com", "_blank");
+  };
 
   return (
     <nav
@@ -82,7 +84,7 @@ export default function Navbar() {
               onClick={handleContactClick}
               className="hover:text-bluemain duration-500"
             >
-              Contact
+              Email
             </button>
           </div>
 
@@ -124,7 +126,7 @@ export default function Navbar() {
             onClick={handleContactClick}
             className="text-white hover:text-bluemain duration-500"
           >
-            Contact
+            Email
           </button>
         </div>
       </div>
